@@ -11,7 +11,10 @@ export default function Detalhes(props) {
 
   return (
     <TelaDeFundo>
-      <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
+      <ScrollView 
+        showsVerticalScrollIndicator={false} 
+        style={styles.container}
+      >
         <InformacoesUsuario
           nome={dados.nome}
           detalhes="Cliente desde 2018"
@@ -37,7 +40,10 @@ export default function Detalhes(props) {
           <Text style={styles.detalhes}>{dados.sobre}</Text>
 
           <Text style={styles.subtitulo}>Endereço</Text>
-          <Image style={styles.imagemMapa} source={mapa} />
+          <Image 
+            style={styles.imagemMapa} 
+            source={mapa} 
+          />
           <Text>{dados.endereco}</Text>
           <TouchableOpacity 
             style={styles.botao} 
